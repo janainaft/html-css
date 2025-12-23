@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Nova pasta"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "exercicios",
+		"liveServer.settings.port": 5501
+	}
+}

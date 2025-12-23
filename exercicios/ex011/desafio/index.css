@@ -1,0 +1,19 @@
+body{
+    background-color: blueviolet;
+}
+
+video-container{
+   width: 100%;
+   overflow: hidden;
+}
+
+video-left{
+    float: left;
+    width: 50%;
+}
+
+video-right{
+    float: right;
+    width: 50%;
+    margin: 0;
+}
