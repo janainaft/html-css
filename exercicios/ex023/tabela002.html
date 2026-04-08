@@ -11,6 +11,7 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -23,6 +24,12 @@
              font-weight: bold;
              padding: 10px;
              background-color: gainsboro;
+        }
+
+        thead > tr > th{
+              position: sticky;
+              top: 0;
+              background-color: ;
         }
 
         tbody > tr:nth-child(odd){  /*2n - 1*/
