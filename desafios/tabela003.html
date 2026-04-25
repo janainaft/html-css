@@ -3,21 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
     <title>Notas</title>
 </head>
 <body>
     <table>
         <thead>
+            <tr>
             <th>Área</th>
             <th>Disciplinas</th>
-            <th>Notas</th>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
+            <tr>
+            
+            <th colspan="1" class="header-group">Notas</th>
+            <th rowspan="1"  class="sub-header">Nota 1</th>
+            <th rowspan="1" class="sub-header">Nota 2</th>
+            </tr>
             <th>Média</th>
+            </tr>
         </thead>
         <tbody>
+            <tr>
             <th>Exatas</th>
+            </tr>
             <tr>
                 <td>Matemática</td>
                 <td>20</td>
