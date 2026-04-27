@@ -17,13 +17,6 @@
             padding: 10px;
         }
 
-        .header-group{
-            display: block;
-        }
-        
-        .sub-header{
-            display: block;
-        }
     </style>
     <title>Notas</title>
 </head>
@@ -31,20 +24,20 @@
     <table>
         <thead>
             <tr>
-            <th>Área</th>
-            <th>Disciplinas</th>
+            <th row="1">Área</th>
+            <th col="1">Disciplinas</th>
             <tr>
             
-            <th colspan="1" class="header-group">Notas</th>
-            <th rowspan="1"  class="sub-header">Nota 1</th>
-            <th rowspan="1" class="sub-header">Nota 2</th>
+            <th col="1">Notas</th>
+            <th row="1">Nota 1</th>
+            <th row="1">Nota 2</th>
             </tr>
-            <th>Média</th>
+            <th row="1">Média</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-            <th>Exatas</th>
+            <th colspan="2" scope="row">Exatas</th>
             </tr>
             <tr>
                 <td>Matemática</td>
@@ -72,7 +65,7 @@
             </tr>
              <tr>
                 <th>Média de Exatas</th>
-                <td>235</td>
+                <td row="4">235</td>
              </tr>
              <tr>
                 <td>História</td>
@@ -87,8 +80,8 @@
                 <td>70</td>
              </tr>
              <tr>
-                <th>Média de Humanas</th>
-                <td>140</td>
+                <th row="4">Média de Humanas</th>
+                <td row="4">140</td>
              </tr>
         </tbody>
     </table>
