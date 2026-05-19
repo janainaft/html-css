@@ -7,83 +7,32 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table{
             border-collapse: collapse;
         }
 
-
-        th, td{
+        th , td{
             border: 1px solid black;
             padding: 10px;
         }
-
     </style>
-    <title>Notas</title>
+    <title>Resultados</title>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-            <th row="1">Área</th>
-            <th col="1">Disciplinas</th>
-            <tr>
-            
-            <th col="1">Notas</th>
-            <th row="1">Nota 1</th>
-            <th row="1">Nota 2</th>
-            </tr>
-            <th row="1">Média</th>
+                <th scope="col">Área</th>
+                <th colspan="3" scope="colgroup">Disciplina</th>
+                <th colspan="3" scope="colgroup">Notas</th>
+                <th scope="row">Nota 1</th>
+                <th scope="row">Nota 2</th>
+                <th scope="col">Média</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-            <th colspan="2" scope="row">Exatas</th>
-            </tr>
-            <tr>
-                <td>Matemática</td>
-                <td>20</td>
-                <td>60</td>
-                <td>80</td>
-            </tr>
-            <tr>
-                <td>Física</td>
-                <td>15</td>
-                <td>10</td>
-                <td>25</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td>30</td>
-                <td>30</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td>35</td>
-                <td>35</td>
-                <td>70</td>
-            </tr>
-             <tr>
-                <th>Média de Exatas</th>
-                <td row="4">235</td>
-             </tr>
-             <tr>
-                <td>História</td>
-                <td>50</td>
-                <td>20</td>
-                <td>70</td>
-             </tr>
-             <tr>
-                <td>Geografia</td>
-                <td>40</td>
-                <td>30</td>
-                <td>70</td>
-             </tr>
-             <tr>
-                <th row="4">Média de Humanas</th>
-                <td row="4">140</td>
-             </tr>
-        </tbody>
+        <tbody></tbody>
+        <tfoot></tfoot>
     </table>
 </body>
 </html>
