@@ -4,46 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* direções:
-           flex-directiom possui:flex-direction= horizontal:
-           row= esquerda para a direita ex pr-br;
-           row-reverse: da direita para a esquerda;
-           flex-direction= vertical column= coluna:
-           column= de cima para baixo;
-           columnreverse: de baixo para cima;
-        */
-
-        /*eixos (axis)
-          flex-direction=row (direção da esquerda para a diteita)(direção horizontal= deitado): 
-          eixo principal ou main-axis: 
-          ponto inicial = main-start e ponto final = main-end;
-          eixo transversal ou cross-axis:
-          ponto inicial = cros-start e ponto final = cross-end;
-        
-          flex-direction= row=reverse (direção da direita para a esquerda):
-          ponto inicial = main-start e ponto final = main-end;
-          eixo transversal ou cross-axis:
-          de baixo para cima;
-
-          flex-direction= column (direção vertical)
-          main-axis de cima para baixo;
-          cross-axis da esquerda para direita;
-
-          flex-direction= cplimn-reverse (direção vertical)
-          main-axis de baixo para cima;
-          cross-axis de direnta para a esquerda;
-        */
+     
         div.cintainer{
             background-color: lightsalmon;
 
             display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+            height: 400px;
         }
 
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex:auto;
+            padding: 40px;
         }
     </style>
     <title>Flexible Box</title>
@@ -57,6 +32,11 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
     </div>
 </body>
 </html>
