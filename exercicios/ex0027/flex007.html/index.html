@@ -4,59 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* direções:
-           flex-directiom possui:flex-direction= horizontal:
-           row= esquerda para a direita ex pr-br;
-           row-reverse: da direita para a esquerda;
-           flex-direction= vertical column= coluna:
-           column= de cima para baixo;
-           columnreverse: de baixo para cima;
-        */
-
-        /*eixos (axis)
-          flex-direction=row (direção da esquerda para a diteita)(direção horizontal= deitado): 
-          eixo principal ou main-axis: 
-          ponto inicial = main-start e ponto final = main-end;
-          eixo transversal ou cross-axis:
-          ponto inicial = cros-start e ponto final = cross-end;
-        
-          flex-direction= row=reverse (direção da direita para a esquerda):
-          ponto inicial = main-start e ponto final = main-end;
-          eixo transversal ou cross-axis:
-          de baixo para cima;
-
-          flex-direction= column (direção vertical)
-          main-axis de cima para baixo;
-          cross-axis da esquerda para direita;
-
-          flex-direction= cplimn-reverse (direção vertical)
-          main-axis de baixo para cima;
-          cross-axis de direnta para a esquerda;
-        */
+       
         div.cintainer{
             background-color: lightsalmon;
 
             display: flex;
+            flex-flow: row wrap;
         }
 
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex:auto;
+            padding: 20px;
+        }
+
+        div#i1{
+            order: 0;
+        }
+
+         div#i2{
+            order: -2;
+        }
+
+         div#i3{
+            order: 4;
+        }
+
+         div#i4{
+            order: 8;
+        }
+
+         div#i5{
+            order: 2;
+        }
+
+         div#i6{
+            order: 0;
+        }
+
+         div#i7{
+            order: -4;
         }
     </style>
     <title>Flexible Box</title>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
     </div>
 </body>
 </html>
