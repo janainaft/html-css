@@ -7,15 +7,18 @@
       
         div.cintainer{
             background-color: lightsalmon;
-
             display: flex;
+            flex-flow: row wrap;
+
         }
 
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex:auto;
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 1;
         }
     </style>
     <title>Flexible Box</title>
@@ -25,10 +28,7 @@
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+     
     </div>
 </body>
 </html>
